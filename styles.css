@@ -1,0 +1,68 @@
+
+body{
+    padding: 0 !important;
+    margin: 0 !important;
+}
+.main-container {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.all-section-content-width {
+  width: 1440px;
+}
+.section1-background {
+    width: 100%;
+  background: linear-gradient(180deg, #ff5733 0%, rgba(255, 87, 51, 0) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.section1 {
+  position: relative;
+  padding-top: 142px;
+  padding-left: 116px;
+  padding-right: 116px;
+  height: 736px;
+  padding-bottom: 52px;
+}
+.row-1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-logo {
+  position: absolute;
+  top: 52px;
+  left:116px ;
+  display: 176px;
+  height: 180px;
+  margin-bottom: 101px;
+}
+.nav-ul li {
+  margin-bottom: 44px;
+  color: #FFF;
+
+  font-family: "Bruno Ace";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.nav-ul li a{
+    text-decoration: none;
+}
+.nav-ul li::marker {
+   content:"-   ";
+   
+  
+  }
+
+.banner-img {
+  width: 770px;
+  height: 541px;
+}
