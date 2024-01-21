@@ -56,11 +56,9 @@ function goToContactSection() {
   // behavior:"smooth" shows the scroll transition to the element
   document.getElementById("contact").scrollIntoView({ behavior: "smooth" });
 }
-function viewGallery(imageNumber) {
-  document.getElementById("gallery").style.display = "flex";
-}
-function closeGallery() {
-  document.getElementById("gallery").style.display = "none";
+
+function scrollToGallery(){
+    document.getElementById("gallery0").scrollIntoView({ behavior: "smooth" });
 }
 function viewResponse(imageNumber) {
   document.getElementById("contact-responses").style.display = "flex";
@@ -98,3 +96,11 @@ function nextImage() {
   let id = "img-" + img;
   document.getElementById(id).scrollIntoView({ behavior: "smooth" });
 }
+
+function viewGallery(imageNumber) {
+    img=1
+    document.getElementById("gallery").style.display = "flex";
+  }
+  function closeGallery() {
+    document.getElementById("gallery").style.display = "none";
+  }

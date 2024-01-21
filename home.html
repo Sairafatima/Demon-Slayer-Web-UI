@@ -9,30 +9,32 @@
       <div class="main-container">
         <!-- gradient background for section one -->
         <div class="section1-background">
-          <!-- maximum width for all sections -->
-          <div class="section1 all-section-content-width">
-            <!-- logo on top left corner -->
-            <img class="main-logo" src="./logo.png" />
-            <!-- div contain list and image -->
-            <div class="row-1">
-              <!-- list in section one -->
-              <ul class="nav-ul">
-                <li>
-                  <!-- useing hero section id to go to hero sections -->
-                  <a onclick="goToHeroSection()">Heros</a>
-                </li>
-                <li><a onclick="goToVilliansSection()">Villians</a></li>
-                <!-- remove bottom margin/space from last list itemt -->
-                <li ><a onclick="goToContactSection()">Contact</a></li>
-                <li style="margin-bottom: 0px"><a onclick="viewGallery()">Gallery</a></li>
-              </ul>
-              <!-- image on right side of list -->
-              <img class="banner-img" src="./banner.png" />
-              <!-- div contain list and image end-->
-            </div>
-            <!-- maximum width for all sections end -->
-          </div>
+          
           <!-- gradient background for section one end -->
+        </div>
+        <!-- maximum width for all sections -->
+        <div class="section1 all-section-content-width">
+          <!-- logo on top left corner -->
+          <img class="main-logo" src="./logo.png" />
+          <!-- div contain list and image -->
+          <div class="row-1">
+            <!-- list in section one -->
+            <ul class="nav-ul">
+              <li>
+                <!-- useing hero section id to go to hero sections -->
+                <a onclick="goToHeroSection()">Heros</a>
+              </li>
+              <li><a onclick="goToVilliansSection()">Villians</a></li>
+              <!-- remove bottom margin/space from last list itemt -->
+            
+              <li ><a onclick="scrollToGallery()">Gallery</a></li>
+              <li  style="margin-bottom: 0px"><a onclick="goToContactSection()">Contact</a></li>
+            </ul>
+            <!-- image on right side of list -->
+            <img class="banner-img" src="./banner.png" />
+            <!-- div contain list and image end-->
+          </div>
+          <!-- maximum width for all sections end -->
         </div>
         <!-- background color for hero section -->
         <div class="heros-background" >
@@ -225,7 +227,12 @@
           </div>
         </div>
         <!-- background color for hero section  end-->
-
+        <div class="section2 all-section-content-width" id="gallery0" >
+          <h1>Gallery</h1>
+          <div class="gallerysection"><img  class="gallery-wallpaper" src="./gallery/wallpaper.jpg"/>
+            <button class="view-gallery" onclick="viewGallery()">VIEW GALLERY</button></div>
+          
+          </div>
         <!-- contact us form section with maximum width -->
         <div class="section2 all-section-content-width" id="contact" >
           <h1>Contact</h1>
@@ -242,7 +249,7 @@
            
             <label>Message</label>
             <!-- messahe input element (using text area to show multi lines input )-->
-            <textarea  rows="7"  id="form-message" onchange="setMessage()"></textarea>
+            <textarea  rows="4"  id="form-message" onchange="setMessage()"></textarea>
             <label id="thank-you-text" style="display: none;">Thank you!</label>
             <button type="submit">SUBMIT</button>
           </form>
@@ -266,8 +273,9 @@
               <!-- call function when user click on item -->
               <li  class="footer-list-item" onclick="goToContactSection()">Contact</li>
 
-              <li  class="footer-list-item" onclick="viewGallery()">Gallery</li>
+              
               <li  class="footer-list-item" onclick="viewResponse()">Responses</li>
+              <li  class="footer-list-item" onclick="scrollToGallery()">Gallery</li>
             </ul>
           </div>
           <div class="footer-bottom">
@@ -277,7 +285,7 @@
  
         </footer>
 
-        <div class="hero-modal" id="gallery" style="display: flex;">
+        <div class="hero-modal" id="gallery" >
           <div class="hero-modal-inner" style="flex-direction: row;">
             <p onclick="closeGallery()" class="close">x</p>
             <p onclick="prevImage()" class="left"><</p>
