@@ -70,8 +70,11 @@ function goToContactSection(){
     document.getElementById("contact").scrollIntoView({behavior:"smooth"})
 }
 function viewGallery(imageNumber){
-document.getElementById("gallery").style.display="block"
+document.getElementById("gallery").style.display="flex"
 
+}
+function closeGallery(){
+    document.getElementById("gallery").style.display="none"
 }
 function viewResponse(imageNumber){
     document.getElementById("contact-responses").style.display="flex"
@@ -90,4 +93,24 @@ function viewResponse(imageNumber){
 
 function closeResponses(){
     document.getElementById("contact-responses").style.display="none"
+}
+
+
+var img=1;
+var maxImages=3
+function prevImage(){
+   if(img===1){
+    return
+   }
+    img-=1
+    let id="img-"+img
+    document.getElementById(id).scrollIntoView({behavior:"smooth"})
+}
+function nextImage(){
+   if(img===maxImages){
+    return
+   }
+    img+=1
+    let id="img-"+img
+    document.getElementById(id).scrollIntoView({behavior:"smooth"})
 }

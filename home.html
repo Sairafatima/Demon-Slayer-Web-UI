@@ -277,8 +277,19 @@
  
         </footer>
 
-        <div class="hero-modal" id="gallery">
+        <div class="hero-modal" id="gallery" style="display: flex;">
+          <div class="hero-modal-inner" style="flex-direction: row;">
+            <p onclick="closeGallery()" class="close">x</p>
+            <p onclick="prevImage()" class="left"><</p>
+          
+            <div class="image-gallery"><img src="./gallery/1.jpg" class="gallery-image" id="img-1"/>
+              <img src="./gallery/2.jpg" class="gallery-image" id="img-2"/>
+              <img src="./gallery/3.jpg" class="gallery-image" id="img-3"/>
+              <img src="./gallery/4.jpg" class="gallery-image" id="img-4"/>
+            </div>
 
+<p onclick="nextImage()" class="right">></p>
+          </div>
         </div>
         <div class="hero-modal" id="contact-responses">
           
