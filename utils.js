@@ -1,14 +1,55 @@
-const tanjiro = {
-    rank: "1",
-    intro:
-      "Tanjiro is very kind by nature and has been described by others as having very gentle eyes and a compassionate personamado",
-    name: "Tanjiro Kamado",
+
+
+var name=""
+var email=""
+var message=""
+var userArray=[]
+
+function setName(){
+    if(document.getElementById("form-name"))
+    {
+        let nameElm=document.getElementById("form-name")
+        name=nameElm.value
+    }
+}
+
+
+function setEmail(){
+    if(document.getElementById("form-email"))
+    {
+       
+        email=document.getElementById("form-email").value
+        
+    }
+}
+
+
+function setMessage(){
+    if(document.getElementById("form-message"))
+    {
+        message=document.getElementById("form-message").value
+        
+    }
+}
+
+function submitForm(){
   
-};
+   document.getElementById("thank-you-text").html=name;
+   document.getElementById("thank-you-text").style.display="block"
+   let user={
+    name:name ||"NA",
+    email:email ||"NA",
+    message:message ||"NA"
+   } 
+
+   userArray.push(user)
+}
+
+
 
 function goToHeroSection(id){
     // document is html page
-    // getElementById function returns the elemtn which has heros id
+    // getElementById function returns the elemnt which has heros id
     // scrollIntoView function scroll to the element on which it is called on
     // behavior:"smooth" shows the scroll transition to the element
     // this function can be optimized by using id from funtion input/argument
@@ -31,4 +72,22 @@ function goToContactSection(){
 function viewGallery(imageNumber){
 document.getElementById("gallery").style.display="block"
 
+}
+function viewResponse(imageNumber){
+    document.getElementById("contact-responses").style.display="flex"
+    let tableElm=document.getElementById("response-table")
+    userArray.forEach(element => {
+        let row= tableElm.insertRow()
+        let nameCell= row.insertCell()
+        nameCell.innerHTML=element.name
+        let emailCell= row.insertCell()
+        emailCell.innerHTML=element.email
+        let messageCell= row.insertCell()
+        messageCell.innerHTML=element.message
+    });
+    
+    }
+
+function closeResponses(){
+    document.getElementById("contact-responses").style.display="none"
 }

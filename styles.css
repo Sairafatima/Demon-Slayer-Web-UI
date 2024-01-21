@@ -16,6 +16,14 @@
   font-display: swap;
   src: url("./Product Sans Regular.ttf");
 }
+.heros-background{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
 body {
   padding: 0 !important;
   margin: 0 !important;
@@ -43,7 +51,7 @@ body {
   padding-top: 142px;
   padding-left: 116px;
   padding-right: 116px;
-  height: 736px;
+  height: 600px;
   padding-bottom: 52px;
 }
 .row-1 {
@@ -90,9 +98,7 @@ body {
   display: flex;
   flex-direction: column;
   padding-top:140px;
-  padding-bottom: 140px;
-  /* padding-left: 145px; */
-  /* padding-right: 145px; */
+
 }
 h1 {
   color: #fff;
@@ -206,7 +212,7 @@ form{
   width: 606.999px;
   
 }
-label{
+label,td{
   color: #FFF;
 
 font-family: "Product Sans";
@@ -217,18 +223,29 @@ line-height: normal;
 margin-bottom: 5px;
 margin-left: 15px;
 }
+
+th{
+  color: #FFF;
+
+  font-family: "Product Sans";
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 5px;
+  margin-left: 15px;
+}
 input,textarea{
   border-radius: 23.929px;
 border: 2.393px solid rgba(255, 87, 51, 0.60);
-
+color: #FFF;
 margin-bottom: 18px;
 width: 100%;
 background-color: transparent;
 padding: 0 15px;
-color: rgba(255, 255, 255, 0.20);
 
 font-family: "Product Sans";
-font-size: 12.762px;
+font-size: 20px;
 font-style: normal;
 font-weight: 400;
 line-height: normal;
@@ -260,7 +277,9 @@ font-style: normal;
 font-weight: 400;
 line-height: 67.001px;
 text-align: center;
+cursor: pointer;
 }
+
 
 
 .form-image{
@@ -269,18 +288,47 @@ height: 754px;
 }
 
 footer{
-  max-width: 1391px;
-  
-  min-width: 90%;
-height: 223px;
-flex-shrink: 0;
+  width: 100%;
+position: relative;
+display: flex;
+align-items: center;
+justify-content: center;
 
 }
 
+.footer-content{
+  margin-top: 300px;
+  max-width: 1391px;
+  min-width: 90%;
+height: 223px;
+flex-shrink: 0;
+border-radius: 30px;
+border: 1px solid rgba(255, 255, 255, 0.15);
+
+background: rgba(255, 255, 255, 0.09);
+
+backdrop-filter: blur(15px);
+
+position: relative
+
+
+}
+.footer-background{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+height: 492px;
+flex-shrink: 0;
+background: linear-gradient(360deg, #FF5733 0%, rgba(255, 87, 51, 0.00) 100%);
+
+
+}
 .footer-top{
 display: flex;
 flex-direction: row;
 align-items: center;
+width: 100%;
 height: 138px;
 
 }
@@ -310,7 +358,7 @@ line-height: normal;
   content:""
 }
 .footer-bottom{
-  width: 1391px;
+ 
 height: 83.125px;
 display: flex;
 flex-direction: column;
@@ -346,12 +394,79 @@ margin-top: 0;
 }
 .hero-modal{
   display: none;
+  align-items: center;
+  justify-content: center;
 
   position: fixed;
+
   top: 0;
   left: 0;
   width: 100%;
   height:100%;
   z-index: 10;
-  background-color: #FF3D00;
+  background-color: hsla(14, 68%, 7%, 0.6);
+}
+table{
+  width: 700px;
+  border-radius: 16px;
+  
+  
+  background: rgba(255, 129, 74, 0.17);
+  
+  backdrop-filter: blur(8.295384407043457px);
+  border-collapse: collapse;
+  text-align: center;
+  text-transform: capitalize;
+}
+.hero-modal-inner{
+  position: relative;
+  width: 900px;
+  background-color: black;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(180deg, #ff5733 0%, rgba(255, 87, 51, 0.5) 100%);
+
+}
+td{
+  /* border: 2px solid rgba(255, 87, 51, 0.60); */
+  padding: 16px;
+}
+th{
+  padding: 25px 16px 16px 16px;
+  border-bottom: 2px solid rgba(255, 129, 74, 0.17);
+}
+td,th{}
+
+.close{
+  position: absolute;
+  top: 10px;
+  right: 30px;
+  color: #FFF;
+  font-family: "Bruno Ace";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 5px;
+  margin-left: 15px;
+  cursor: pointer;
+}
+.villians-background{
+  position: absolute;
+  height: 700px;
+  width: 100%;
+  bottom: 300px;
+  left: 0;
+  background: linear-gradient(360deg, #ff5733 0%, rgba(255, 87, 51, 0) 100%);
+}
+.villians-background-2{
+  position: absolute;
+  height: 500px;
+  width: 100%;
+  bottom: -200px;
+  left: 0;
+  background: linear-gradient(180deg, #ff5733 0%, rgba(255, 87, 51, 0) 100%);
 }
