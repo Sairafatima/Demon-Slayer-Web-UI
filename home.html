@@ -5,39 +5,68 @@
     <script src="./utils.js"></script>
   </head>
   <body>
+    <!-- contain all elements'content -->
     <div class="main-container">
+      <!-- gradient background for section one -->
       <div class="section1-background">
+        <!-- maximum width for all sections -->
         <div class="section1 all-section-content-width">
+          <!-- logo on top left corner -->
           <img class="main-logo" src="./logo.png" />
+          <!-- div contain list and image -->
           <div class="row-1">
+            <!-- list in section one -->
             <ul class="nav-ul">
               <li>
-                <a>Characters</a>
+                <!-- useing hero section id to go to hero sections -->
+                <a onclick="goToHeroSection()">Heros</a>
               </li>
-              <li><a>Seasons</a></li>
-              <li style="margin-bottom: 0px"><a>Contact</a></li>
+              <li><a onclick="goToVilliansSection()">Villians</a></li>
+              <!-- remove bottom margin/space from last list itemt -->
+              <li ><a onclick="goToContactSection()">Contact</a></li>
+              <li style="margin-bottom: 0px"><a onclick="viewGallery()">Gallery</a></li>
             </ul>
+            <!-- image on right side of list -->
             <img class="banner-img" src="./banner.png" />
+            <!-- div contain list and image end-->
           </div>
+          <!-- maximum width for all sections end -->
         </div>
+        <!-- gradient background for section one end -->
       </div>
-      <div class="heros-background">
-        <div class="section2 all-section-content-width">
-          <h1>Heros</h1>
+      <!-- background color for hero section -->
+      <div class="heros-background" >
+        <!-- content maximum width -->
+        <div class="section2 all-section-content-width" id="heros">
+          <!-- main heading -->
+          <h1 >Heros</h1>
+          <!-- show heros card horizontally -->
           <div class="hero-carousal">
-            <div class="hero-card" >
+            <!-- one hero card -->
+            <div class="hero-card">
+              <!-- hero rank -->
               <h3 class="hero-rank"># Rank 1</h3>
+              <!-- hero image -->
               <img src="./yoriichi.png" class="hero-avatar" />
+              <!-- hero name and intro in the bottom of card -->
               <div class="hero-intro-div">
                 <h2>Yoriichi Tsugikuni</h2>
                 <p class="hero-intro">
-                  Yoriichi Tsugikuni singlehandedly invented the original Sun Breathing Style
+                  Yoriichi Tsugikuni singlehandedly invented the original Sun
+                  Breathing Style
                 </p>
+                <!-- hero name and intro in the bottom of card end -->
               </div>
+              <!-- one hero card end -->
             </div>
+
+            <!-- one hero card -->
             <div class="hero-card">
-              <h3 class="hero-rank"># Rank 2</h3>
+              <!-- hero rank -->
+              <h3 class="hero-rank"># Rank 3</h3>
+              <!-- hero image -->
               <img src="./tanjiro.png" class="hero-avatar" />
+              <!-- hero name and intro in the bottom of card -->
               <div class="hero-intro-div">
                 <h2>Tanjiro Kamado</h2>
                 <p class="hero-intro">
@@ -45,151 +74,206 @@
                   others as having very gentle eyes and a compassionate
                   personamado
                 </p>
+                <!-- hero name and intro in the bottom of card end -->
               </div>
+              <!-- one hero card end -->
             </div>
-            <div class="hero-card" >
+
+            <div class="hero-card">
               <h3 class="hero-rank"># Rank 3</h3>
               <img src="./gyomei.png" class="hero-avatar" />
               <div class="hero-intro-div">
                 <h2>Gyomei Himejima</h2>
                 <p class="hero-intro">
-                  Gyomei is the most powerful Hashira alive, surpassing his comrades in terms of endurance and martial skills.
+                  Gyomei is the most powerful Hashira alive, surpassing his
+                  comrades in terms of endurance and martial skills.
                 </p>
               </div>
             </div>
-            <div class="hero-card" >
+            <div class="hero-card">
               <h3 class="hero-rank"># Rank 4</h3>
               <img src="./sanemi.png" class="hero-avatar" />
               <div class="hero-intro-div">
                 <h2>Sanemi Shinazugawa</h2>
                 <p class="hero-intro">
-                  The Wind Hashira is a living tornado, initially displaying his mettle during a friendly match against Giyu Tomioka.
+                  The Wind Hashira is a living tornado, initially displaying his
+                  mettle during a friendly match against Giyu Tomioka.
                 </p>
               </div>
             </div>
-            <div class="hero-card" >
+            <div class="hero-card">
               <h3 class="hero-rank"># Rank 5</h3>
               <img src="./giyu.png" class="hero-avatar" />
               <div class="hero-intro-div">
-                <h2>Giyu Tomioka
-                </h2>
+                <h2>Giyu Tomioka</h2>
                 <p class="hero-intro">
-                  Giyu Tomioka is a lone wolf, preferring to finish his battles without wasting his breath on his opponents.
+                  Giyu Tomioka is a lone wolf, preferring to finish his battles
+                  without wasting his breath on his opponents.
                 </p>
               </div>
             </div>
-            <div class="hero-card" >
+            <div class="hero-card">
               <h3 class="hero-rank"># Rank 6</h3>
               <img src="./rengoku.png" class="hero-avatar" />
               <div class="hero-intro-div">
-                <h2>Kyojuro Rengoku
-                </h2>
+                <h2>Kyojuro Rengoku</h2>
                 <p class="hero-intro">
-                  Kyojuro Rengoku displays an enthusiastic desire to seek justice on behalf of those who cannot defend themselves.
+                  Kyojuro Rengoku displays an enthusiastic desire to seek
+                  justice on behalf of those who cannot defend themselves.
                 </p>
               </div>
-            </div> 
-            
+            </div>
           </div>
-          <div class="section2 all-section-content-width">
-            <h1>Villians</h1>
-
-
-            <div class="hero-carousal">
-            
-            
-              <div class="hero-card">
-                <h3 class="hero-rank"># Rank 1</h3>
-                <img src="./muzan.png" class="hero-avatar" />
-            
-            
-            
-                <div class="hero-intro-div">
-                  <h2>Muzan Kibutsuji</h2>
-                  <p class="hero-intro">
-                    Muzan's eternal youth, immortality, and Biokinesis made him all but invincible.
-                  </p>
-                </div>
-                
-              </div>   
-<div class="hero-card">
-  <h3 class="hero-rank"># Rank 2</h3>
-  <img src="./kokushibou.png" class="hero-avatar" />
-  <div class="hero-intro-div">
-    <h2>kokushibo</h2>
-    <p class="hero-intro">
-      One of the most dangerous things about Kokushibō is his skill with a sword.
-    </p>
-  </div>
-
-</div>
-<div class="hero-card">
-  <h3 class="hero-rank"># Rank 3</h3>
-  <img src="./doma.png" class="hero-avatar" />
-  <div class="hero-intro-div">
-    <h2>Douma</h2>
-    <p class="hero-intro">
-      his ice is lethal if anyone inhales it as well, giving him both a perfect offense and defense.
-    </p>
-  </div>
-</div>
-<div class="hero-card">
-  <h3 class="hero-rank"># Rank 4</h3>
-  <img src="./Akaza.png" class="hero-avatar" />
-  <div class="hero-intro-div">
-    <h2>Akaza</h2>
-    <p class="hero-intro">
-    Akaza's appearance in Demon Slayer: Mugen Train made it clear to see that his power was in a league of its own.
-    </p>
-  </div>
-</div>
-<div class="hero-card">
-  <h3 class="hero-rank"># Rank 5</h3>
-  <img src="./Kaiigaku.png" class="hero-avatar" />
-  <div class="hero-intro-div">
-    <h2>Kaigaku</h2>
-    <p class="hero-intro">
-    His electrical powers were truly fearful and made him a worthy opponent.
-    </p>
-  </div>
-</div>
-<div class="hero-card">
-  <h3 class="hero-rank"># Rank 6</h3>
-  <img src="./Hantengu.png" class="hero-avatar" />
-  <div class="hero-intro-div">
-    <h2>Hantengu</h2>
-    <p class="hero-intro">
-      Hantengu has a really interesting Blood Demon Art that uses his powerful emotions as a weapon.
-    </p>
-  </div>
-</div>
-<div class="hero-card">
-  <h3 class="hero-rank"># Rank 7</h3>
-  <img src="./Gyutaro.png" class="hero-avatar" />
-  <div class="hero-intro-div">
-    <h2>Gyutaro</h2>
-    <p class="hero-intro">
-    Gyutaro the position of the lowest Upper-Rank demon, there was always a fighting chance against these foes.
-    </p>
-  </div>
-</div>
-<div class="hero-card">
-  <h3 class="hero-rank"># Rank 8</h3>
-  <img src="./rui.png" class="hero-avatar" />
-  <div class="hero-intro-div">
-    <h2>Rui</h2>
-    <p class="hero-intro">
-      This demon's threads were extremely powerful and had all but killed both Tanjiro and Nezuko in battle.
-    </p>
-  </div>
-</div>
-
-
-
-
-            </div>
-            </div>
+        
         </div>
+        <div class="section2 all-section-content-width"  id="villians">
+          <h1>Villians</h1>
+
+          <div class="hero-carousal">
+            <div class="hero-card">
+              <h3 class="hero-rank"># Rank 1</h3>
+              <img src="./muzan.png" class="hero-avatar" />
+
+              <div class="hero-intro-div">
+                <h2>Muzan Kibutsuji</h2>
+                <p class="hero-intro">
+                  Muzan's eternal youth, immortality, and Biokinesis made him
+                  all but invincible.
+                </p>
+              </div>
+            </div>
+            <div class="hero-card"  >
+              <h3 class="hero-rank"># Rank 2</h3>
+              <img src="./kokushibou.png" class="hero-avatar" />
+              <div class="hero-intro-div">
+                <h2>kokushibo</h2>
+                <p class="hero-intro">
+                  One of the most dangerous things about Kokushibō is his
+                  skill with a sword.
+                </p>
+              </div>
+            </div>
+            <div class="hero-card">
+              <h3 class="hero-rank"># Rank 3</h3>
+              <img src="./doma.png" class="hero-avatar" />
+              <div class="hero-intro-div">
+                <h2>Douma</h2>
+                <p class="hero-intro">
+                  his ice is lethal if anyone inhales it as well, giving him
+                  both a perfect offense and defense.
+                </p>
+              </div>
+            </div>
+            <div class="hero-card">
+              <h3 class="hero-rank"># Rank 4</h3>
+              <img src="./Akaza.png" class="hero-avatar" />
+              <div class="hero-intro-div">
+                <h2>Akaza</h2>
+                <p class="hero-intro">
+                  Akaza's appearance in Demon Slayer: Mugen Train made it
+                  clear to see that his power was in a league of its own.
+                </p>
+              </div>
+            </div>
+            <div class="hero-card">
+              <h3 class="hero-rank"># Rank 5</h3>
+              <img src="./Kaiigaku.png" class="hero-avatar" />
+              <div class="hero-intro-div">
+                <h2>Kaigaku</h2>
+                <p class="hero-intro">
+                  His electrical powers were truly fearful and made him a
+                  worthy opponent.
+                </p>
+              </div>
+            </div>
+            <div class="hero-card">
+              <h3 class="hero-rank"># Rank 6</h3>
+              <img src="./Hantengu.png" class="hero-avatar" />
+              <div class="hero-intro-div">
+                <h2>Hantengu</h2>
+                <p class="hero-intro">
+                  Hantengu has a really interesting Blood Demon Art that uses
+                  his powerful emotions as a weapon.
+                </p>
+              </div>
+            </div>
+            <div class="hero-card">
+              <h3 class="hero-rank"># Rank 7</h3>
+              <img src="./Gyutaro.png" class="hero-avatar" />
+              <div class="hero-intro-div">
+                <h2>Gyutaro</h2>
+                <p class="hero-intro">
+                  Gyutaro the position of the lowest Upper-Rank demon, there
+                  was always a fighting chance against these foes.
+                </p>
+              </div>
+            </div>
+            <div class="hero-card">
+              <h3 class="hero-rank"># Rank 8</h3>
+              <img src="./rui.png" class="hero-avatar" />
+              <div class="hero-intro-div">
+                <h2>Rui</h2>
+                <p class="hero-intro">
+                  This demon's threads were extremely powerful and had all but
+                  killed both Tanjiro and Nezuko in battle.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- background color for hero section  end-->
+
+      <!-- contact us form section with maximum width -->
+      <div class="section2 all-section-content-width" id="contact" >
+        <h1>Contact</h1>
+        <!-- contain form and image -->
+        <div class="row-1">
+        <form>
+          <label>Full Name</label>
+          <!-- full name input element -->
+          <input />
+          <!-- email input element -->
+          <label>Email</label>
+          <input />
+          <!-- mopbile input element -->
+          <label>Mobile</label>
+          <!-- messahe input element -->
+          <input />
+
+          <label>Message</label>
+          <!-- messahe input element (using text area to show multi lines input )-->
+          <textarea value="" rows="10"></textarea>
+
+          <button type="submit">SUBMIT</button>
+        </form>
+        <img src="./form.png" class="form-image"/>
+        </div>
+      </div>
+
+
+      
+      <footer >
+        <!-- contain logo and list items -->
+<div class="footer-top">
+  <img class="footer-logo" src="./logo.png"/>
+  <ul class="footer-list">
+    <!-- call function when user click on item -->
+    <li class="footer-list-item" onclick="goToHeroSection()">Heros</li>
+    <!-- call function when user click on item -->
+    <li  class="footer-list-item" onclick="goToVilliansSection()">Villians</li>
+    <!-- call function when user click on item -->
+    <li  class="footer-list-item" onclick="goToContactSection()">Contact</li>
+  </ul>
+</div>
+<div class="footer-bottom">
+  <p class="footer-text">Demon Slayer: Kimetsu no Yaiba Landing page </p>
+  <p class="copyright-text">@ Copyright and All rights Reserved </p>
+</div>
+      </footer>
+
+      <div class="hero-modal" id="gallery">
+
       </div>
     </div>
   </body>

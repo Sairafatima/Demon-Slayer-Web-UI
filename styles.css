@@ -60,6 +60,9 @@ body {
   height: 180px;
   margin-bottom: 101px;
 }
+.nav-ul{
+  margin-top: 98px;
+}
 .nav-ul li {
   margin-bottom: 44px;
   color: #fff;
@@ -88,8 +91,8 @@ body {
   flex-direction: column;
   padding-top:140px;
   padding-bottom: 140px;
-  padding-left: 145px;
-  padding-right: 145px;
+  /* padding-left: 145px; */
+  /* padding-right: 145px; */
 }
 h1 {
   color: #fff;
@@ -185,4 +188,170 @@ h2 {
   font-weight: 400;
   line-height: normal;
   margin: 0;
+}
+
+form{
+  border-radius: 47.858px;
+  border: 0.798px solid rgba(26, 26, 26, 0.34);
+  
+  background: rgba(255, 129, 74, 0.17);
+  
+  backdrop-filter: blur(8.295384407043457px);
+  
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 35px 46px;
+  width: 606.999px;
+  
+}
+label{
+  color: #FFF;
+
+font-family: "Product Sans";
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin-bottom: 5px;
+margin-left: 15px;
+}
+input,textarea{
+  border-radius: 23.929px;
+border: 2.393px solid rgba(255, 87, 51, 0.60);
+
+margin-bottom: 18px;
+width: 100%;
+background-color: transparent;
+padding: 0 15px;
+color: rgba(255, 255, 255, 0.20);
+
+font-family: "Product Sans";
+font-size: 12.762px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+input{
+ 
+  height: 67.001px;
+}
+
+input:focus,input:focus-visible,input:hover{
+  border: 2.393px solid rgba(255, 87, 51, 0.60);
+  background: radial-gradient(#FF3D00, #3f2016);
+  outline-offset: 0px;
+  outline: unset;
+}
+
+button{
+  width: 227.325px;
+height: 67.001px;
+  border-radius: 23.929px;
+border: 2.393px solid rgba(255, 255, 255, 0.20);
+
+background: #FF5733;
+color: #FFF;
+
+font-family: "Bruno Ace";
+font-size: 23.929px;
+font-style: normal;
+font-weight: 400;
+line-height: 67.001px;
+text-align: center;
+}
+
+
+.form-image{
+  width: 473px;
+height: 754px;
+}
+
+footer{
+  max-width: 1391px;
+  
+  min-width: 90%;
+height: 223px;
+flex-shrink: 0;
+
+}
+
+.footer-top{
+display: flex;
+flex-direction: row;
+align-items: center;
+height: 138px;
+
+}
+.footer-logo{
+  width: 118px;
+  height: 120px;
+  flex-shrink: 0;
+  margin-left: 44px;
+}
+.footer-list{
+  margin-left: 33px;
+  display: flex;
+  flex-direction: row;
+  color: #FFF;
+
+font-family: "Bruno Ace";
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.footer-list-item{
+  margin-left: 44px;
+  cursor: pointer;
+}
+.footer-list-item::marker{
+  content:""
+}
+.footer-bottom{
+  width: 1391px;
+height: 83.125px;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+justify-content:center;
+padding-left:35px ;
+  border-radius: 0px 0px 25px 25px;
+  background: rgba(255, 255, 255, 0.09);
+  
+  backdrop-filter: blur(15.199999809265137px);
+}
+.copyright-text{
+  color: #FFF;
+
+  font-family: "Product Sans";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.footer-text{
+  color: #FFF;
+
+font-family: "Bruno Ace";
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin-bottom: 3px;
+margin-top: 0;
+}
+.hero-modal{
+  display: none;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height:100%;
+  z-index: 10;
+  background-color: #FF3D00;
 }
